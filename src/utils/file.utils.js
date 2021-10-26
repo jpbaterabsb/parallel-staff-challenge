@@ -2,7 +2,7 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const camelCase = require('camelcase');
 
-exports.extractDataFromCSV = async path => {
+exports.extractDataFromCSV = async (path, deleteAfterRead = false) => {
 
     const results = [];
     return new Promise((resolve, reject) => {
@@ -16,8 +16,13 @@ exports.extractDataFromCSV = async path => {
             })
             .on('error', (err) => reject(err))
             .on('end', () => {
+                if(deleteAfterRead) {
+                    fs.unlinkSync(path);
+                }
                 resolve(results);
             });
 
     });
 };
+
+exports.getPath = (req) => __dirname + '/../../' + '/tmp/' + req.file.filename;
