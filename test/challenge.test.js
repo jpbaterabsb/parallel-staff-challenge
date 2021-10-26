@@ -29,7 +29,7 @@ test('Print out all Patient IDs where the first name is missing', async () => {
     const patientDB = await processData(patientDataFromCsv);
     const patientIdWhichNameIsMissing = patientDB.filter(p => !p.firstName).map(p => p._id.toString());
     expect(patientIdWhichNameIsMissing.length).toBe(2);
-    console.log(patientIdWhichNameIsMissing);
+    console.log("IDs where the first name is missing" ,patientIdWhichNameIsMissing);
 });
 
 test('Print out all Patient IDs where the email address is missing, but consent is Y', async () => {
@@ -37,7 +37,7 @@ test('Print out all Patient IDs where the email address is missing, but consent 
     const patientDB = await processData(patientDataFromCsv);
     const patientIdWhichNameIsMissing = patientDB.filter(p => !p.emailAddress && p.consent === 'Y').map(p => p._id.toString());
     expect(patientIdWhichNameIsMissing.length).toBe(1);
-    console.log(patientIdWhichNameIsMissing);
+    console.log("IDs where the email address is missing, but consent is Y", patientIdWhichNameIsMissing);
 });
 
 
