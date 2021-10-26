@@ -1,4 +1,4 @@
-# Fullstack Challenge - Backend
+# Parallel Staff Challenge - Backend
 
 ## Introduction
 
@@ -23,7 +23,7 @@ npm install
 docker-compose up -d
 ``` 
 
-Note: When you execute docker-compose you start mongodb docker, so you need to run the command <b>docker-compose down</b> to stop postegresSQL's docker.
+Note: When you execute docker-compose you start mongodb docker, so you need to run the command <b>docker-compose down</b> to stop MongoDB's docker.
 
 
 ### Run application
