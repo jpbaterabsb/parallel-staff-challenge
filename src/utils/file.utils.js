@@ -25,4 +25,4 @@ exports.extractDataFromCSV = async (path, deleteAfterRead = false) => {
     });
 };
 
-exports.getPath = (req) => __dirname + '/../../' + '/tmp/' + req.file.filename;
+exports.getPath = (req) => __dirname + '/../../' + req.file.filename;
