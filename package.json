@@ -1,0 +1,23 @@
+{
+  "name": "parallel-staff-code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "camelcase": "^6.2.0",
+    "csv-parser": "^3.0.0",
+    "date-fns": "^2.25.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14"
+  }
+}
