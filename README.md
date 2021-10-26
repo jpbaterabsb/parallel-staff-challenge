@@ -45,7 +45,7 @@ npm test
 
 ### Endpoints
 
-- Load CSV file: http://localhost:3000/v1/upload - Note: request CSV file is placed in <b>test/files/patients.csv<b>
+- Load CSV file: http://localhost:3000/v1/upload - Note: request CSV file is placed in <b>test/files/patients.csv</b>
 - Health applicaiton: http://localhost:3000/v1/health
 
 ### Notes
